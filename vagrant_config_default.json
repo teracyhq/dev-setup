@@ -1,0 +1,37 @@
+{
+  "vagrant": {
+    "config_paths": [ // add paths of json config files to be loaded
+      // the path must be relative to the Vagrantfile
+      "workspace/dev/dev-setup/vagrant_config_default.json",
+      "workspace/blog/dev-setup/vagrant_config_default.json",
+      "workspace/scats/dev-setup/vagrant_config_default.json",
+      "workspace/scats-demos/dev-setup/vagrant_config_default.json",
+      "workspace/kubernetes-stack-cookbook/dev-setup/vagrant_config_default.json"
+    ]
+  },
+  "vm": {
+    "hostname": "teracy.dev"
+  },
+  "vb": {
+    "memory": 2048, // need to adjust for the right optimal MEM
+    "cpus": 2
+  },
+  "provisioners": [{
+    "_id": "0",
+    "_ua_cookbooks_path": [
+      "workspace/dev-setup/chef/main-cookbooks"
+    ],
+    "_ua_run_list": [
+      "teracy"
+    ],
+    "json": {
+      "teracy-dev": {
+        "proxy": {
+          "container": {
+            "enabled": true
+          }
+        }
+      }
+    }
+  }]
+}
