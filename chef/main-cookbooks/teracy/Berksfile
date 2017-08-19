@@ -2,3 +2,5 @@
 source 'https://supermarket.chef.io'
 
 metadata
+
+cookbook 'kubernetes-stack', '~> 0.1.1'

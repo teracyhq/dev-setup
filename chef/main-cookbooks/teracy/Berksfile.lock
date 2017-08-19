@@ -1,0 +1,13 @@
+DEPENDENCIES
+  kubernetes-stack
+    git: https://github.com/teracyhq-incubator/kubernetes-stack-cookbook.git
+    revision: a66fa0295d87eb936d23465bf463c748f50d73da
+    branch: develop
+  teracy
+    path: .
+    metadata: true
+
+GRAPH
+  kubernetes-stack (0.2.0-SNAPSHOT)
+  teracy (0.1.0)
+    kubernetes-stack (>= 0.0.0)
