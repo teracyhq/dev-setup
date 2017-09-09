@@ -6,7 +6,8 @@
       "workspace/blog/dev-setup/vagrant_config_default.json",
       "workspace/scats/dev-setup/vagrant_config_default.json",
       "workspace/scats-demos/dev-setup/vagrant_config_default.json",
-      "workspace/kubernetes-stack-cookbook/dev-setup/vagrant_config_default.json"
+      "workspace/kubernetes-stack-cookbook/dev-setup/vagrant_config_default.json",
+      "workspace/flask-classful/dev-setup/vagrant_config_default.json"
     ]
   },
   "vm": {
